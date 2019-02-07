@@ -22,6 +22,10 @@
     align-items: center;  
     margin-top: 10px;
     border: 2.5px solid @lambda-red;
+    transform: translateY(1);
+    transform: rotate(360deg);/* cant get this to work */
+    visibility: visible;
+    transition: transform 0.4s linear, visibility 0.3s linear 1s;
   }
   .dropdown-link {
     width: 100%;
@@ -37,6 +41,7 @@
   }
   .dropdown-hidden {
     display: none;
+    visibility: hidden;
   }
 }
 

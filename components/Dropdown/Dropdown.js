@@ -13,6 +13,13 @@ class Dropdown { //Step 3: TabLink class definition and pass in the link referen
 
     // Add a click handler to the button reference and call the toggleContent method.
     this.button.addEventListener('click', () => this.toggleContent());
+    // attempting to add in Dropdown ease in/ out 
+    // this.button.addEventListener('click', e => {
+    //   this.toggleContent()
+    //   e.stopPropagation();
+    //   TweenMax.to(e.currentTarget, 10,{ease:Bounce.easeOut});
+    //   // TweenMax.to(e.currentTarget)
+    // });
   }
   // method
   toggleContent() {
@@ -24,3 +31,11 @@ class Dropdown { //Step 3: TabLink class definition and pass in the link referen
 
 // Nothing to do here, just study what the code is doing and move on to the Dropdown class
 let dropdowns = document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown));
+
+// blockz.forEach((index,i) => {
+//   index.addEventListener('mouseup', (e) => { 
+//     TweenMax.from(e.currentTarget, 1, {x:'0', rotation:3600, scale:0.5,})
+//     // tweenMax.reverse(2)
+//   });
+  
+// });
